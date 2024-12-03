@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  min-height: 100vh; /* Faz o container ocupar toda a altura da janela */
+}
+
+.header {
+  background-color: #f27253;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main {
+  display: flex; /* Define o Flexbox para alinhar os itens horizontalmente */
+  flex: 2; /* Faz o main ocupar o espaço restante entre o header e o footer */
+  background-color: #f4f4f4;
+}
+
+.left, .right {
+  flex: 2; /* Divide o espaço igualmente entre os dois lados */
+  padding: 1rem;
+}
+
+.left {
+  background-color: #fba48f;
+}
+
+.right {
+  background-color: #f9aac4;
+}
+
+.footer {
+  background-color: #c2aaf9;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">Header</header>
+    <main class="main">
+      <section class="left">Left Content</section>
+      <section class="right">Right Content</section>
+    </main>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>
