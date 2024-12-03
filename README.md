@@ -33,5 +33,5 @@ O layout é composto por três seções principais:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/nome-do-repositorio.git
+   git clone https://github.com/valentineemanuele/css-layouts-practice.git
 
